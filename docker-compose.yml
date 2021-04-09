@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  lambda:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lambda:latest
+    ports:
+      - "9001:8080"
